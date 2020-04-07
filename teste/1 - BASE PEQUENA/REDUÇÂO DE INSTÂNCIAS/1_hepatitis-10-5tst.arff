@@ -1,0 +1,14 @@
+@relation hepatitis
+@attribute Age integer [7, 78]
+@attribute AlkPhosphate integer [26, 295]
+@attribute ProTime integer [0, 100]
+@attribute Class {1, 2}
+@inputs Age, AlkPhosphate, ProTime
+@outputs Class
+@data
+38,53,85,2
+42,60,47,2
+51,78,52,2
+41,81,74,2
+33,46,60,2
+34,30,76,2

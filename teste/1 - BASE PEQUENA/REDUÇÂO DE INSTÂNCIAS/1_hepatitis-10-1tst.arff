@@ -1,0 +1,13 @@
+@relation hepatitis
+@attribute Sex integer [1, 2]
+@attribute Histology integer [1, 2]
+@attribute Class {1, 2}
+@inputs Sex, Histology
+@outputs Class
+@data
+1,1,1
+1,1,2
+1,1,2
+1,1,2
+1,2,2
+1,2,1

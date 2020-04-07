@@ -1,0 +1,15 @@
+@relation hepatitis
+@attribute LiverBig integer [1, 2]
+@attribute Ascites integer [1, 2]
+@attribute AlbuMin real [2.1, 6.4]
+@attribute Class {1, 2}
+@inputs LiverBig, Ascites, AlbuMin
+@outputs Class
+@data
+2,2,4,2
+2,2,3.8,2
+2,2,4.4,2
+2,2,4,2
+2,2,3.4,2
+2,2,4,2
+2,2,4,2

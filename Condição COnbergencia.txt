@@ -1,0 +1,59 @@
+private void DeffuzificacaoFuzzyAtivados() {
+        //int c = 1;
+        double melhorTNorma = 0;
+        double tnorma = 1; // calculo para encontrar a melhor regra    
+        int controle = 0;
+        String melhorClassificacao = "";
+
+        double melhorTNorma2 = 0;
+        double tnorma2 = 1; // calculo para encontrar a melhor regra    
+        String melhorClassificacao2 = "";
+
+        //System.out.println(regras.size());
+        for (int i = 0; i < regras.size(); i++) {
+            // System.out.println(c++);
+            if ((i + 1) % (varEntrada + 1) != 0) {
+                //System.out.println(atributos.get(controle).toString() + " " + regras.get(i).toString());
+                double grau = fis.getVariable(atributos.get(controle).toString()).getMembership(regras.get(i).toString());
+                //System.out.println(grau);
+
+                tnorma = tnorma + grau;
+                tnorma2 = tnorma2 + grau;
+
+            } else {
+                //System.out.println(tnorma);
+                if (tnorma > melhorTNorma) {
+                    melhorTNorma = tnorma;
+                    tnorma = 1;
+                    melhorClassificacao = regras.get(i).toString();
+
+                } else if (tnorma == melhorTNorma && tnorma2 > melhorTNorma2) {
+                    melhorTNorma2 = tnorma2;
+                    tnorma2 = 0;
+                    melhorClassificacao2 = regras.get(i).toString();
+                }
+
+                if (tnorma <= melhorTNorma) {
+                    tnorma = 1;
+                    tnorma2 = 0;
+                }
+                //System.out.println(" ");  System.out.println(regras.get(i)); System.out.println(" ");
+            }
+            if (controle < varEntrada) {
+                controle++;
+            } else {
+                controle = 0;
+            }
+        }
+        //System.out.println(melhorClassificacao);
+        //System.out.println(melhorTNorma);
+        TestSimulado.add(melhorClassificacao);
+       
+        /*if (melhorClassificacao.equals("")) {
+            TestSimulado.add(melhorClassificacao2);
+           
+        } else {
+            TestSimulado.add(melhorClassificacao);
+        }*/
+
+    }

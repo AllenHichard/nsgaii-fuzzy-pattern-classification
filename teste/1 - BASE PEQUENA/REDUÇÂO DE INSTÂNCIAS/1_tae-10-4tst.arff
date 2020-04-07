@@ -1,0 +1,23 @@
+@relation tae
+@attribute Native integer [1, 2]
+@attribute Course integer [1, 26]
+@attribute Semester integer [1, 2]
+@attribute Class {1,2,3}
+@inputs Native, Course, Semester
+@outputs Class
+@data
+1,3,1,3
+2,21,2,3
+2,17,2,3
+2,7,2,2
+2,3,2,1
+2,1,2,1
+2,3,2,2
+2,3,1,2
+2,11,2,2
+2,3,2,1
+1,3,1,3
+2,2,2,1
+2,2,2,3
+2,1,2,2
+2,3,2,1

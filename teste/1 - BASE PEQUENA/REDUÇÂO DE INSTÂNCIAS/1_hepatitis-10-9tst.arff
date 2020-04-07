@@ -1,0 +1,18 @@
+@relation hepatitis
+@attribute Antivirals integer [1, 2]
+@attribute LiverBig integer [1, 2]
+@attribute Class {1, 2}
+@inputs Antivirals, LiverBig
+@outputs Class
+@data
+2,2,2
+1,1,2
+1,2,2
+2,2,2
+1,2,2
+2,2,2
+2,1,2
+2,2,1
+1,2,2
+2,2,1
+1,2,2

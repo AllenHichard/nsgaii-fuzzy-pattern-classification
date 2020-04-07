@@ -1,0 +1,34 @@
+@relation heart
+@attribute FastingBloodSugar integer [0, 1]
+@attribute Thal integer [3, 7]
+@attribute Class {1, 2}
+@inputs FastingBloodSugar, Thal
+@outputs Class
+@data
+0,3,1
+0,3,1
+0,3,1
+0,3,2
+0,3,1
+0,3,1
+0,3,1
+0,7,2
+0,3,1
+0,7,2
+1,7,2
+0,7,2
+0,3,2
+1,7,2
+0,7,2
+0,7,2
+0,7,2
+0,7,1
+1,3,1
+0,3,1
+0,3,1
+0,7,1
+0,3,1
+0,3,1
+0,3,1
+0,7,2
+0,3,2

@@ -1,0 +1,20 @@
+@relation iris
+@attribute PetalLength real [1.0, 6.9]
+@attribute Class {Irissetosa, Irisversicolor, Irisvirginica}
+@inputs PetalLength
+@outputs Class
+@data
+1.7,Iris-setosa
+1.9,Iris-setosa
+1.4,Iris-setosa
+1.5,Iris-setosa
+4,Iris-versicolor
+4.7,Iris-versicolor
+5.1,Iris-versicolor
+4.6,Iris-versicolor
+4.2,Iris-versicolor
+6.3,Iris-virginica
+5.1,Iris-virginica
+5.3,Iris-virginica
+6,Iris-virginica
+5.1,Iris-virginica

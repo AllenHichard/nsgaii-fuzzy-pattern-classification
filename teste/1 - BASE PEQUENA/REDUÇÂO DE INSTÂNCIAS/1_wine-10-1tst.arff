@@ -1,0 +1,24 @@
+@relation wine
+@attribute ColorIntensity real [1.2, 13.0]
+@attribute Class {1,2,3}
+@inputs ColorIntensity
+@outputs Class
+@data
+3.7,1
+5.1,1
+6.13,1
+8.9,1
+5.85,1
+5.3,2
+3.74,2
+4.8,2
+2.06,2
+3.4,2
+3.3,2
+1.95,2
+3,2
+5,3
+8.42,3
+7.65,3
+10.26,3
+7.3,3

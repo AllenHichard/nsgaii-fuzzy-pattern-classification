@@ -1,0 +1,15 @@
+@relation hepatitis
+@attribute LiverFirm integer [1, 2]
+@attribute ProTime integer [0, 100]
+@attribute Class {1, 2}
+@inputs LiverFirm, ProTime
+@outputs Class
+@data
+1,78,2
+1,36,2
+1,74,2
+2,66,1
+1,67,2
+1,100,2
+1,56,2
+2,48,2

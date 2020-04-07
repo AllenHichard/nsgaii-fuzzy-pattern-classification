@@ -1,0 +1,22 @@
+@relation tae
+@attribute Native integer [1, 2]
+@attribute Instructor integer [1, 25]
+@attribute Class {1,2,3}
+@inputs Native, Instructor
+@outputs Class
+@data
+2,9,3
+2,15,3
+2,13,3
+2,7,2
+2,14,2
+2,23,3
+2,11,1
+2,18,1
+2,14,1
+2,14,3
+2,9,3
+1,23,2
+2,18,2
+2,9,2
+2,17,1
